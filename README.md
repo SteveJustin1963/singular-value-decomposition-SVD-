@@ -25,3 +25,6 @@ The motivation for using the SVD for dimension reduction is that it allows us to
 
 # Ref
 - https://www.edx.org/course/high-dimensional-data-analysis
+- https://cran.r-project.org/bin/windows/extsoft/3.4/include/gsl/gsl_linalg.h
+- https://www.gnu.org/software/gsl/doc/html/linalg.html
+
