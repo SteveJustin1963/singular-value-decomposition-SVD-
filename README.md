@@ -20,3 +20,8 @@ The singular value decomposition (SVD) is a technique used to reduce the dimensi
 The SVD can be used for dimension reduction by retaining only the top k singular values and corresponding singular vectors, where k is the desired reduced dimensionality. This allows us to represent the data in a lower-dimensional space, while still capturing the important features of the data.
 
 The motivation for using the SVD for dimension reduction is that it allows us to represent high-dimensional data in a lower-dimensional space while preserving the underlying structure of the data. This can be useful in a number of applications, including data compression, data visualization, and machine learning. By reducing the dimensionality of the data, we can often improve the performance of machine learning algorithms, as well as make the data easier to interpret and visualize.
+
+
+
+# Ref
+- https://www.edx.org/course/high-dimensional-data-analysis
