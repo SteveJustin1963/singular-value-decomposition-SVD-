@@ -16,12 +16,13 @@ The SVD of A can be computed using a variety of algorithms, such as the Golub-Ka
 
 
 In mathematics, the distance between two points in a space is a measure of the length of the shortest path between those points. For example, in two-dimensional space (a plane), the distance between two points (x1, y1) and (x2, y2) can be calculated using the Euclidean distance formula:
-```distance = sqrt((x1 - x2)^2 + (y1 - y2)^2)```
+```distance = sqrt((x1 - x2)^2 + (y1 - y2)^2)
 In three-dimensional space, the distance formula becomes:
-```distance = sqrt((x1 - x2)^2 + (y1 - y2)^2 + (z1 - z2)^2)```
+distance = sqrt((x1 - x2)^2 + (y1 - y2)^2 + (z1 - z2)^2)
 And in general, for n-dimensional space, the distance formula is:
-```distance = sqrt((x1 - x2)^2 + (y1 - y2)^2 + ... + (xn - yn)^2)```
+distance = sqrt((x1 - x2)^2 + (y1 - y2)^2 + ... + (xn - yn)^2)
 This distance measure is known as the Euclidean distance.
+```
 
 ## curved space 
 In general relativity, the gravitational force between two masses is described by the curvature of spacetime. The presence of a mass or energy distorts the spacetime around it, causing other objects to follow curved paths through this distorted spacetime.
@@ -43,18 +44,21 @@ Step 1:
 Collect and organize the data into a matrix A.
 
 In this example, the data consists of the components of the metric tensor ```g_{ij}```, which can be organized into the following matrix A:
+
 ```$$A = \begin{bmatrix}-1 & 0 \\ 0 & 1 \end{bmatrix}$$```
 
 Step 2: 
 
-Compute the SVD of A: A = U * S * V^T.
+Compute the SVD of A: ```A = U * S * V^T```.
 
 The singular value decomposition of A is given by:
-```$$A = U \times S \times V^T$$```
+```
+$$A = U \times S \times V^T$$
 where
-```$$U = \begin{bmatrix}-1 & 0 \\ 0 & 1 \end{bmatrix}$$```
-```$$S = \begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$```
-```$$V^T = \begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$```
+$$U = \begin{bmatrix}-1 & 0 \\ 0 & 1 \end{bmatrix}$$
+$$S = \begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$
+$$V^T = \begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$
+```
 
 Step 3: 
 
@@ -75,6 +79,7 @@ Step 1:
 Collect and organize the data into a matrix A.
 
 In this example, the data consists of the components of the metric tensor ```g_{ij}```, which can be organized into the following matrix A:
+
 ```$$A = \begin{bmatrix}a & 0 \\ 0 & b \end{bmatrix}$$```
 
 Step 2: 
@@ -83,11 +88,13 @@ Compute the SVD of A:
 ```A = U * S * V^T.```
 
 The singular value decomposition of A is given by:
-```$$A = U \times S \times V^T$$```
+```
+$$A = U \times S \times V^T$$
 where
-```$$U = \begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$```
-```$$S = \begin{bmatrix}\sqrt{a} & 0 \\ 0 & \sqrt{b} \end{bmatrix}$$```
-```$$V^T = \begin{bmatrix}\frac{1}{\sqrt{a}} & 0 \\ 0 & \frac{1}{\sqrt{b}} \end{bmatrix}$$```
+$$U = \begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$
+$$S = \begin{bmatrix}\sqrt{a} & 0 \\ 0 & \sqrt{b} \end{bmatrix}$$
+$$V^T = \begin{bmatrix}\frac{1}{\sqrt{a}} & 0 \\ 0 & \frac{1}{\sqrt{b}} \end{bmatrix}$$
+```
 
 Step 3: 
 
