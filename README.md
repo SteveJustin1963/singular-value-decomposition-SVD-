@@ -108,7 +108,18 @@ Use the SVD to perform dimension reduction, data compression, or other operation
 
 Since the data is anisotropic, we can use the SVD to reduce the dimensionality of the data by projecting it onto a lower dimensional space. For example, if we wanted to project the data onto a one-dimensional space, we could use the first singular vector ```(u1 = (1,0))``` as the basis for the projection. This would reduce the data to a single scalar value, representing the average acceleration across the entire accelerating frame of reference.
 
+## Implications
+The singular value decomposition (SVD) is a powerful mathematical tool that has a wide range of applications in science and engineering. Some of the implications and potential benefits of using SVD include:
 
+Data compression: SVD can be used to reduce the dimensionality of data, which can be useful for data storage and transmission. By retaining only the most important singular values and singular vectors, we can represent the data in a lower-dimensional space while still capturing the essential features of the data.
+
+Data denoising: SVD can be used to remove noise from data by setting small singular values to zero and reconstructing the matrix. This can be useful for improving the accuracy of data analysis and for removing artifacts from images and other data.
+
+Low-rank approximations: SVD can be used to find a low-rank approximation of a matrix, which can be useful for understanding the underlying structure of the data and for making predictions.
+
+Data visualization: SVD can be used to reduce the dimensionality of data and visualize it in two or three dimensions, which can be helpful for understanding and interpreting the data.
+
+Overall, SVD is a powerful tool that has many potential applications in science, engineering, and other fields. By understanding the underlying structure of data and extracting meaningful features from it, we can gain insight into complex systems and make more informed decisions.
 
 # Ref
 - https://www.edx.org/course/high-dimensional-data-analysis
